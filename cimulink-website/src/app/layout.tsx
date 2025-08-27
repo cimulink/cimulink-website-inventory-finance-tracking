@@ -1,10 +1,11 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Inter, Playfair_Display, Poppins } from 'next/font/google';
+import { Inter, Playfair_Display, Poppins, Montserrat } from 'next/font/google';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { GradientText } from '@/components/ui/enhanced/gradient-text';
 import { EnhancedNavigation } from '@/components/ui/enhanced/navigation';
+import { Footer } from '@/components/ui/enhanced/footer';
 
 const inter = Inter({ subsets: ['latin'] });
 const playfair = Playfair_Display({ 
@@ -16,10 +17,20 @@ const poppins = Poppins({
   weight: ['400', '500', '600', '700'],
   variable: '--font-poppins'
 });
+const montserrat = Montserrat({ 
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700', '800'],
+  variable: '--font-montserrat'
+});
 
 export const metadata: Metadata = {
-  title: 'Cimulink BookFlow | Inventory & Financial Management for Publishers',
-  description: 'Automate your publishing backoffice operations with BookFlow - the purpose-built platform for inventory management and financial tracking.',
+  title: 'Cimulink | Custom Software Development for Inventory, Finance & Warehouse Management',
+  description: 'Custom software solutions for inventory management, financial tracking, and warehouse operations. Specialized solutions like BookFlow for publishers and institutions.',
+  icons: {
+    icon: [{ url: '/favicon.svg' }, { url: '/cimulink_logo.svg', sizes: '48x48', type: 'image/svg+xml' }],
+    shortcut: '/favicon.svg',
+    apple: '/cimulink_logo.svg',
+  },
 };
 
 export default function RootLayout({
@@ -29,26 +40,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${playfair.variable} ${poppins.variable}`}>
+      <body className={`${inter.className} ${playfair.variable} ${poppins.variable} ${montserrat.variable}`}>
         <EnhancedNavigation />
         <main>{children}</main>
-        <footer className="border-t bg-muted py-12">
-          <div className="container mx-auto px-4">
-            <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-              <div className="flex items-center gap-3">
-                <img src="/bookflow_logo.svg" alt="BookFlow" className="h-8 w-8" />
-                <GradientText 
-                  text="BookFlow" 
-                  className="text-xl font-semibold font-playfair"
-                  gradient="linear-gradient(90deg, #3b82f6 0%, #1d4ed8 50%, #3b82f6 100%)"
-                />
-              </div>
-              <p className="text-sm text-muted-foreground text-center md:text-right">
-                © 2025 Cimulink. All rights reserved.
-              </p>
-            </div>
-          </div>
-        </footer>
+        <Footer />
       </body>
     </html>
   );

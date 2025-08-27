@@ -55,7 +55,7 @@ export function ContactSection() {
                   className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-poppins shadow-lg hover:shadow-xl transition-all duration-300 w-full group-hover:scale-105"
                 >
                   <a 
-                    href="linkedin.com/company/cimulink/" 
+                    href="https://linkedin.com/company/cimulink/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center gap-2"
