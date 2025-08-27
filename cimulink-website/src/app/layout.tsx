@@ -42,7 +42,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} ${playfair.variable} ${poppins.variable} ${montserrat.variable}`}>
         <EnhancedNavigation />
-        <main>{children}</main>
+        <main className="pt-16">{children}</main>
         <Footer />
       </body>
     </html>
