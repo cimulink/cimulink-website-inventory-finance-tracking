@@ -99,7 +99,7 @@ export function EnhancedNavigation({ className }: NavigationProps) {
     const checkWidth = () => {
       if (containerRef.current) {
         const width = containerRef.current.offsetWidth;
-        setIsMobile(width < 768); // 768px is md breakpoint
+        setIsMobile(width < 1000); // 1000px breakpoint to prevent overlap with navigation items
       }
     };
 
@@ -167,7 +167,7 @@ export function EnhancedNavigation({ className }: NavigationProps) {
               className="flex items-center gap-2 hover:opacity-80 transition-opacity min-w-0"
             >
               <img src={logoSrc} alt={brandType} className="h-8 w-8 sm:h-10 sm:w-10 flex-shrink-0" />
-              <div className="hidden min-[480px]:block">
+              <div className="hidden min-[680px]:block">
                 <BrandedText 
                   brand={brandType}
                   size="lg"
@@ -180,7 +180,7 @@ export function EnhancedNavigation({ className }: NavigationProps) {
               className="flex items-center gap-2 hover:opacity-80 transition-opacity min-w-0"
             >
               <img src={logoSrc} alt={brandType} className="h-8 w-8 sm:h-10 sm:w-10 flex-shrink-0" />
-              <div className="hidden min-[480px]:block">
+              <div className="hidden min-[680px]:block">
                 <BrandedText 
                   brand={brandType}
                   size="lg"
