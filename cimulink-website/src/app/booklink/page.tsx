@@ -10,11 +10,11 @@ import { RetroGrid } from "@/components/ui/enhanced/retro-grid";
 import { Meteors } from "@/components/ui/enhanced/meteors";
 import { ContactSection } from "@/components/ui/enhanced/contact-section";
 
-export default function BookFlowPage() {
+export default function BookLinkPage() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-background via-background to-muted/20">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-background via-background to-muted/20 pt-16 md:pt-20">
         <RetroGrid className="absolute inset-0" />
         <Meteors number={20} />
         <div className="container mx-auto px-4 text-center z-10 relative">
@@ -58,8 +58,8 @@ export default function BookFlowPage() {
             <div className="mt-16">
               <div className="rounded-2xl w-full shadow-2xl hover:shadow-3xl transition-all duration-500 group overflow-hidden">
                 <Image 
-                  src="/images/bookFlow_dashboard_preview.png" 
-                  alt="BookFlow Dashboard Preview" 
+                  src="/images/BookLink_dashboard_preview.png" 
+                  alt="BookLink Dashboard Preview" 
                   width={1400} 
                   height={900} 
                   quality={95}
@@ -193,15 +193,15 @@ export default function BookFlowPage() {
                 />
               </h2>
               <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto font-poppins leading-relaxed">
-                Unlike generic inventory systems, BookFlow understands the unique complexities of book distribution and provides specialized solutions.
+                Unlike generic inventory systems, BookLink understands the unique complexities of book distribution and provides specialized solutions.
               </p>
               
               {/* Solution Screenshot */}
               <div className="mt-12">
                 <div className="rounded-2xl w-full shadow-xl hover:shadow-2xl transition-all duration-500 group overflow-hidden">
                   <Image 
-                    src="/images/bookflow_solutions_overview.png" 
-                    alt="BookFlow Solutions Overview" 
+                    src="/images/BookLink_solutions_overview.png" 
+                    alt="BookLink Solutions Overview" 
                     width={1400} 
                     height={700} 
                     quality={95}
@@ -229,7 +229,7 @@ export default function BookFlowPage() {
                 /> Your Publishing Operations
               </h2>
               <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto font-poppins leading-relaxed">
-                From inventory tracking to financial reconciliation, BookFlow provides all the tools you need in one integrated platform.
+                From inventory tracking to financial reconciliation, BookLink provides all the tools you need in one integrated platform.
               </p>
             </div>
 
@@ -432,8 +432,8 @@ export default function BookFlowPage() {
             </div>
             <div className="rounded-2xl w-full shadow-2xl hover:shadow-3xl transition-all duration-500 group overflow-hidden">
               <Image 
-                src="/images/bookflow_solutions_overview.png" 
-                alt="BookFlow Complete Solutions Overview" 
+                src="/images/BookLink_solutions_overview.png" 
+                alt="BookLink Complete Solutions Overview" 
                 width={1400} 
                 height={900} 
                 quality={95}
@@ -452,7 +452,7 @@ export default function BookFlowPage() {
             <div className="order-2 lg:order-1">
               <h3 className="text-3xl font-bold mb-6">Achieve Perfect Inventory Control, From Warehouse to Customer</h3>
               <p className="text-lg text-gray-600 mb-6">
-                Stop guessing your stock levels. BookFlow provides a real-time, centralized view of your entire inventory across multiple warehouses and sales channels. Prevent costly stockouts, reduce overstocking, and know exactly what you have and where it is, at all times.
+                Stop guessing your stock levels. BookLink provides a real-time, centralized view of your entire inventory across multiple warehouses and sales channels. Prevent costly stockouts, reduce overstocking, and know exactly what you have and where it is, at all times.
               </p>
               <ul className="space-y-3">
                 <li className="flex items-center gap-3">
@@ -544,7 +544,7 @@ export default function BookFlowPage() {
             <div className="order-1 lg:order-2">
               <div className="rounded-xl w-full shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden">
                 <Image 
-                  src="/images/bookFlow_dashboard_preview.png" 
+                  src="/images/BookLink_dashboard_preview.png" 
                   alt="Forecasting & Analytics Dashboard" 
                   width={700} 
                   height={500} 
@@ -572,7 +572,7 @@ export default function BookFlowPage() {
             <div>
               <h3 className="text-3xl font-bold mb-6">Seamless Integration with Flipkart, Amazon & Your Internal Systems</h3>
               <p className="text-lg text-gray-600 mb-6">
-                Connect all your sales channels and internal systems effortlessly. BookFlow integrates with major marketplaces like Flipkart and Amazon, plus your existing accounting, CRM, and warehouse management systems for complete operational harmony.
+                Connect all your sales channels and internal systems effortlessly. BookLink integrates with major marketplaces like Flipkart and Amazon, plus your existing accounting, CRM, and warehouse management systems for complete operational harmony.
               </p>
               <ul className="space-y-3">
                 <li className="flex items-center gap-3">
@@ -646,7 +646,7 @@ export default function BookFlowPage() {
                   </CardHeader>
                   <CardContent>
                     <p className="text-gray-600 group-hover:text-gray-700 transition-colors leading-relaxed text-center">
-                      We tailor BookFlow to your exact needs, integrating your sales channels and migrating your data.
+                      We tailor BookLink to your exact needs, integrating your sales channels and migrating your data.
                     </p>
                   </CardContent>
                 </div>
@@ -686,13 +686,13 @@ export default function BookFlowPage() {
                 <AccordionItem value="item-1" className="bg-white/70 backdrop-blur-sm rounded-lg px-6 border hover:shadow-md transition-all">
                   <AccordionTrigger className="text-left hover:text-primary transition-colors">We are an institute, not a publisher. Is this for us?</AccordionTrigger>
                   <AccordionContent className="text-gray-600">
-                    Yes. BookFlow is perfect for institutes. The Batch Management feature is designed specifically for managing book distribution for courses, departments, and student groups.
+                    Yes. BookLink is perfect for institutes. The Batch Management feature is designed specifically for managing book distribution for courses, departments, and student groups.
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-2" className="bg-white/70 backdrop-blur-sm rounded-lg px-6 border hover:shadow-md transition-all">
-                  <AccordionTrigger className="text-left hover:text-primary transition-colors">Can BookFlow integrate with our existing accounting/e-commerce software?</AccordionTrigger>
+                  <AccordionTrigger className="text-left hover:text-primary transition-colors">Can BookLink integrate with our existing accounting/e-commerce software?</AccordionTrigger>
                   <AccordionContent className="text-gray-600">
-                    Absolutely. We specialize in creating a connected ecosystem. BookFlow is built to integrate with leading platforms like QuickBooks, Shopify, and major shipping carriers.
+                    Absolutely. We specialize in creating a connected ecosystem. BookLink is built to integrate with leading platforms like QuickBooks, Shopify, and major shipping carriers.
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-3" className="bg-white/70 backdrop-blur-sm rounded-lg px-6 border hover:shadow-md transition-all">
@@ -702,7 +702,7 @@ export default function BookFlowPage() {
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-4" className="bg-white/70 backdrop-blur-sm rounded-lg px-6 border hover:shadow-md transition-all">
-                  <AccordionTrigger className="text-left hover:text-primary transition-colors">What if we need functionality that isn't in BookFlow?</AccordionTrigger>
+                  <AccordionTrigger className="text-left hover:text-primary transition-colors">What if we need functionality that isn't in BookLink?</AccordionTrigger>
                   <AccordionContent className="text-gray-600">
                     That's the benefit of working with Cimulink. For unique requirements, we offer custom development services to build features or integrations tailored to your specific workflow.
                   </AccordionContent>
@@ -710,7 +710,7 @@ export default function BookFlowPage() {
                 <AccordionItem value="item-5" className="bg-white/70 backdrop-blur-sm rounded-lg px-6 border hover:shadow-md transition-all">
                   <AccordionTrigger className="text-left hover:text-primary transition-colors">Is this only for large publishers?</AccordionTrigger>
                   <AccordionContent className="text-gray-600">
-                    Not at all. BookFlow is designed to scale. It's powerful enough for large university presses but accessible for growing independent publishers who are ready to move beyond spreadsheets.
+                    Not at all. BookLink is designed to scale. It's powerful enough for large university presses but accessible for growing independent publishers who are ready to move beyond spreadsheets.
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>

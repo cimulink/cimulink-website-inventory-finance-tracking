@@ -28,7 +28,7 @@ export default function Home() {
                   className="block"
                   gradient="linear-gradient(90deg, #3b82f6 0%, #8b5cf6 50%, #ec4899 100%)"
                 />
-                Your Commerce Operations
+                Your Commercial Operations
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto font-poppins leading-relaxed">
                 We design and implement robust software to manage inventory, automate payment reconciliation, and streamline warehouse operations, integrating seamlessly with platforms like Amazon and Flipkart.
@@ -157,7 +157,7 @@ export default function Home() {
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              {/* BookFlow Card - First Vertical */}
+              {/* BookLink Card - First Vertical */}
               <Card className="group relative p-8 bg-gradient-to-br from-white to-blue-50/50 border-blue-200/50 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-blue-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="relative z-10 space-y-6">
@@ -168,7 +168,7 @@ export default function Home() {
                     <div>
                       <h3 className="text-lg font-semibold text-gray-600 font-poppins">For Book Sellers, Publishers & Institutions</h3>
                       <h4 className="text-2xl font-bold text-blue-800 font-playfair flex items-center gap-2">
-                        Introducing <BrandedText brand="bookflow" size="md" />
+                        Introducing <BrandedText brand="BookLink" size="md" />
                       </h4>
                     </div>
                   </div>
@@ -182,8 +182,8 @@ export default function Home() {
                       asChild
                       className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-poppins shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 w-full group"
                     >
-                      <Link href="/bookflow" className="inline-flex items-center justify-center gap-2">
-                        Explore <BrandedText brand="bookflow" size="sm" className="text-white" />
+                      <Link href="/booklink" className="inline-flex items-center justify-center gap-2">
+                        Explore <BrandedText brand="BookLink" size="sm" className="text-white" />
                         <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                       </Link>
                     </Button>

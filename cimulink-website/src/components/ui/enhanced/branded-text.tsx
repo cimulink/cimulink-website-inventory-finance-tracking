@@ -2,7 +2,7 @@ import React from 'react';
 import { cn } from '@/lib/utils';
 
 interface BrandedTextProps {
-  brand: 'cimulink' | 'bookflow';
+  brand: 'cimulink' | 'BookLink';
   className?: string;
   size?: 'sm' | 'md' | 'lg' | 'xl';
 }
@@ -28,7 +28,7 @@ export function BrandedText({ brand, className, size = 'md' }: BrandedTextProps)
     );
   }
 
-  if (brand === 'bookflow') {
+  if (brand === 'BookLink') {
     return (
       <span className={cn(
         'font-montserrat tracking-tight',
@@ -36,7 +36,7 @@ export function BrandedText({ brand, className, size = 'md' }: BrandedTextProps)
         className
       )}>
         <span style={{ color: '#062161' }}>Book</span>
-        <span style={{ color: '#29B2AC' }}>Flow</span>
+        <span style={{ color: '#29B2AC' }}>Link</span>
       </span>
     );
   }

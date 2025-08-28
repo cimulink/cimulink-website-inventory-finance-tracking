@@ -1,4 +1,4 @@
-# Cimulink BookFlow - UX Structure Plan
+# Cimulink BookLink - UX Structure Plan
 
 ## ┌── Website Architecture
 ## │   ├── Home Page (/)
@@ -12,7 +12,7 @@
 ##     │   ├── Primary Elements
 ##     │   │   ├── Headline (Pain/Benefit Contrast)
 ##     │   │   ├── Subheadline/Description
-##     │   │   ├── Primary CTA Button ("See BookFlow in Action")
+##     │   │   ├── Primary CTA Button ("See BookLink in Action")
 ##     │   │   └── Dashboard Screenshot/Visual
 ##     │   ├── Trust Elements
 ##     │   │   ├── Friction Reducers (Checklist)
@@ -40,7 +40,7 @@
 ##     │       └── Urgency creation
 ##     │
 ##     ├── 3. Social Proof Section
-##     │   ├── Headline: "BookFlow cut our financial closing time by 80%..."
+##     │   ├── Headline: "BookLink cut our financial closing time by 80%..."
 ##     │   ├── Testimonial Content
 ##     │   │   ├── Detailed success story
 ##     │   │   ├── Specific metrics (80% reduction, eliminated stockouts)
@@ -113,12 +113,12 @@
 ##         ├── Social Proof Reinforcement
 ##         │   ├── Powerful quote: "The best investment we've made..."
 ##         │   └── Trust badges: "SOC 2 Compliant," "99.9% Uptime"
-##         ├── Final CTA Button: "See BookFlow in Action"
+##         ├── Final CTA Button: "See BookLink in Action"
 ##         ├── Friction Reducers (Final attempt)
 ##         │   ├── ✓ No-obligation discovery call
 ##         │   └── ✓ See results in weeks
 ##         └── Aspirational Visual
-##             └── Person in control with BookFlow dashboard
+##             └── Person in control with BookLink dashboard
 
 ## ┌── ShadCN UI Components Mapping
 ## │   ├── Layout Components

@@ -25,7 +25,7 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: 'Cimulink | Custom Software Development for Inventory, Finance & Warehouse Management',
-  description: 'Custom software solutions for inventory management, financial tracking, and warehouse operations. Specialized solutions like BookFlow for publishers and institutions.',
+  description: 'Custom software solutions for inventory management, financial tracking, and warehouse operations. Specialized solutions like BookLink for publishers and institutions.',
   icons: {
     icon: [{ url: '/favicon.svg' }, { url: '/cimulink_logo.svg', sizes: '48x48', type: 'image/svg+xml' }],
     shortcut: '/favicon.svg',

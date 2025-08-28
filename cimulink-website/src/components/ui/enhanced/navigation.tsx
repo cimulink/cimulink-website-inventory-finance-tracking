@@ -72,8 +72,8 @@ const cimulinksNavigationLinks = [
   { href: '#contact', label: 'Contact' },
 ];
 
-// BookFlow navigation links
-const bookflowNavigationLinks = [
+// BookLink navigation links
+const bookLinkNavigationLinks = [
   { href: '#hero', label: 'Home' },
   { href: '#pain-points', label: 'Challenges' },
   { href: '#why-choose-us', label: 'Solutions' },
@@ -89,10 +89,10 @@ export function EnhancedNavigation({ className }: NavigationProps) {
   const containerRef = useRef<HTMLElement>(null);
   
   // Determine which branding and navigation to use based on current route
-  const isBookFlowPage = pathname === '/bookflow';
-  const navigationLinks = isBookFlowPage ? bookflowNavigationLinks : cimulinksNavigationLinks;
-  const brandType = isBookFlowPage ? 'bookflow' : 'cimulink';
-  const logoSrc = isBookFlowPage ? '/bookflow_logo.svg' : '/cimulink_logo.svg';
+  const isBookLinkPage = pathname === '/booklink';
+  const navigationLinks = isBookLinkPage ? bookLinkNavigationLinks : cimulinksNavigationLinks;
+  const brandType = isBookLinkPage ? 'BookLink' : 'cimulink';
+  const logoSrc = isBookLinkPage ? '/BookLink_logo.svg' : '/cimulink_logo.svg';
 
   // Enhanced mobile detection using ResizeObserver (shadcn pattern)
   useEffect(() => {
@@ -161,7 +161,7 @@ export function EnhancedNavigation({ className }: NavigationProps) {
       <div className="container mx-auto flex h-16 max-w-screen-2xl items-center justify-between gap-4">
         {/* Left side - Logo */}
         <div className="flex items-center gap-2 flex-1 min-w-0">
-          {isBookFlowPage ? (
+          {isBookLinkPage ? (
             <button 
               onClick={() => scrollToSection('#hero')}
               className="flex items-center gap-2 hover:opacity-80 transition-opacity min-w-0"

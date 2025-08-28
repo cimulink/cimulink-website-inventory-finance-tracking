@@ -28,7 +28,7 @@ export function ContactSection() {
               Your Operations?
             </h2>
             <p className="text-xl md:text-2xl text-gray-700 font-poppins leading-relaxed max-w-3xl mx-auto">
-              Take the next step towards streamlined operations. Let's discuss how BookFlow can revolutionize your business.
+              Take the next step towards streamlined operations. Let's discuss how BookLink can revolutionize your business.
             </p>
           </div>
 
@@ -118,7 +118,7 @@ export function ContactSection() {
                 />
               </h3>
               <p className="text-lg text-gray-700 font-poppins max-w-2xl mx-auto leading-relaxed">
-                Book a no-obligation consultation to see how BookFlow can transform your publishing operations and drive growth.
+                Book a no-obligation consultation to see how BookLink can transform your publishing operations and drive growth.
               </p>
               <Button 
                 asChild
