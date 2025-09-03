@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { CheckCircle, BookOpen, DollarSign, Package, Users, Zap, Shield, TrendingUp, AlertTriangle, Clock, FileText, BarChart3, Settings, Database, ShoppingCart, Code, Building2, ArrowRight } from "lucide-react";
+import { CheckCircle, Rocket, Code, Zap, Cpu, Brain, Users, TrendingUp, BarChart3, Settings, Database, Building2, ArrowRight, Map, Target, Wrench, BookOpen } from "lucide-react";
 import Image from "next/image";
 import { GradientText } from "@/components/ui/enhanced/gradient-text";
 import { BrandedText } from "@/components/ui/enhanced/branded-text";
@@ -22,16 +22,16 @@ export default function Home() {
           <div className="max-w-6xl mx-auto space-y-12">
             <div className="space-y-8">
               <h1 className="text-5xl md:text-7xl font-bold leading-tight font-poppins transition-all duration-700 hover:scale-105">
-                Unlock Your Growth by 
+                Your 
                 <GradientText 
-                  text="Automating" 
+                  text="Tech Copilot" 
                   className="block"
                   gradient="linear-gradient(90deg, #3b82f6 0%, #8b5cf6 50%, #ec4899 100%)"
                 />
-                Your Commercial Operations
+                for Business Growth
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto font-poppins leading-relaxed">
-                We design and implement robust software to manage inventory, automate payment reconciliation, and streamline warehouse operations, integrating seamlessly with platforms like Amazon and Flipkart.
+                We audit your operations, define a strategic tech roadmap, and execute with precision to help you scale, optimize, and innovate. We translate your business goals into technical reality.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <Button 
@@ -53,83 +53,199 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Core Competencies Section */}
-      <section id="core-competencies" className="relative py-20 bg-gradient-to-br from-blue-50/30 via-background to-purple-50/30 overflow-hidden">
+      {/* Services Section */}
+      <section id="services" className="relative py-20 bg-gradient-to-br from-blue-50/30 via-background to-purple-50/30 overflow-hidden">
         <div className="absolute inset-0 bg-grid-black/5 bg-[size:40px_40px]" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-6xl mx-auto">
             <div className="text-center space-y-6 mb-16">
               <h2 className="text-4xl md:text-6xl font-bold font-playfair">
-                The Foundation of Your 
+                Tailored Solutions for Every 
                 <GradientText 
-                  text="Backoffice" 
+                  text="Business Phase" 
                   className=""
                   gradient="linear-gradient(90deg, #3b82f6 0%, #8b5cf6 100%)"
-                />, Reimagined
+                />
               </h2>
               <p className="text-xl text-gray-600 max-w-4xl mx-auto font-poppins leading-relaxed">
-                Our expertise spans the critical operational challenges that every growing business faces. We build solutions that work.
+                From idea to enterprise, we provide technology services designed for your specific stage of growth.
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {/* Pillar 1 */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {/* LaunchPad */}
               <Card className="group relative p-8 bg-gradient-to-br from-white to-blue-50/50 border-blue-200/50 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-blue-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="relative z-10">
                   <div className="flex justify-center mb-6">
                     <div className="p-4 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full group-hover:scale-110 transition-transform duration-300">
-                      <Package className="h-8 w-8 text-white" />
+                      <Rocket className="h-8 w-8 text-white" />
                     </div>
                   </div>
                   <CardHeader className="text-center pb-4">
-                    <CardTitle className="text-xl font-bold text-blue-800 group-hover:text-blue-900 transition-colors">Unified Inventory & Warehouse Control</CardTitle>
+                    <CardTitle className="text-xl font-bold text-blue-800 group-hover:text-blue-900 transition-colors">The LaunchPad</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <p className="text-gray-600 group-hover:text-gray-700 transition-colors leading-relaxed">
-                      Gain a single source of truth for your stock. We build systems to track inventory in real-time across multiple warehouses and sales channels, preventing costly stockouts and optimizing your supply chain.
+                      For businesses just starting. Turn your idea into a market-ready product with an MVP and landing page.
                     </p>
                   </CardContent>
                 </div>
               </Card>
               
-              {/* Pillar 2 */}
+              {/* GrowthEngine */}
               <Card className="group relative p-8 bg-gradient-to-br from-white to-green-50/50 border-green-200/50 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-br from-green-500/5 to-green-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="relative z-10">
                   <div className="flex justify-center mb-6">
                     <div className="p-4 bg-gradient-to-r from-green-500 to-green-600 rounded-full group-hover:scale-110 transition-transform duration-300">
-                      <DollarSign className="h-8 w-8 text-white" />
+                      <Zap className="h-8 w-8 text-white" />
                     </div>
                   </div>
                   <CardHeader className="text-center pb-4">
-                    <CardTitle className="text-xl font-bold text-green-800 group-hover:text-green-900 transition-colors">Automated Financial Reconciliation</CardTitle>
+                    <CardTitle className="text-xl font-bold text-green-800 group-hover:text-green-900 transition-colors">The GrowthEngine</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <p className="text-gray-600 group-hover:text-gray-700 transition-colors leading-relaxed">
-                      Eliminate manual spreadsheet work. Our solutions automatically sync sales orders, returns, and marketplace payments, providing you with accurate, one-click financial reporting and reconciliation.
+                      For businesses hitting scaling challenges. Optimize your existing product for performance and growth.
                     </p>
                   </CardContent>
                 </div>
               </Card>
               
-              {/* Pillar 3 */}
+              {/* Enterprise Velocity */}
               <Card className="group relative p-8 bg-gradient-to-br from-white to-purple-50/50 border-purple-200/50 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-br from-purple-500/5 to-purple-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="relative z-10">
                   <div className="flex justify-center mb-6">
                     <div className="p-4 bg-gradient-to-r from-purple-500 to-purple-600 rounded-full group-hover:scale-110 transition-transform duration-300">
-                      <Zap className="h-8 w-8 text-white" />
+                      <Building2 className="h-8 w-8 text-white" />
                     </div>
                   </div>
                   <CardHeader className="text-center pb-4">
-                    <CardTitle className="text-xl font-bold text-purple-800 group-hover:text-purple-900 transition-colors">Seamless Marketplace & System Integration</CardTitle>
+                    <CardTitle className="text-xl font-bold text-purple-800 group-hover:text-purple-900 transition-colors">Enterprise Velocity</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <p className="text-gray-600 group-hover:text-gray-700 transition-colors leading-relaxed">
-                      Connect everything. We ensure your core systems communicate flawlessly with Amazon, Flipkart, your accounting software, and other essential platforms for complete operational harmony.
+                      For established businesses. Integrate systems and modernize legacy infrastructure for efficiency.
                     </p>
                   </CardContent>
+                </div>
+              </Card>
+              
+              {/* Automation Advantage */}
+              <Card className="group relative p-8 bg-gradient-to-br from-white to-orange-50/50 border-orange-200/50 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-br from-orange-500/5 to-orange-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="relative z-10">
+                  <div className="flex justify-center mb-6">
+                    <div className="p-4 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full group-hover:scale-110 transition-transform duration-300">
+                      <Cpu className="h-8 w-8 text-white" />
+                    </div>
+                  </div>
+                  <CardHeader className="text-center pb-4">
+                    <CardTitle className="text-xl font-bold text-orange-800 group-hover:text-orange-900 transition-colors">Automation Advantage</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-600 group-hover:text-gray-700 transition-colors leading-relaxed">
+                      For any business with repetitive tasks. Deploy AI agents to automate workflows and reduce costs.
+                    </p>
+                  </CardContent>
+                </div>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Tech Blueprint Audit Section */}
+      <section className="relative py-20 bg-gradient-to-br from-gray-50/30 via-background to-slate-50/30 overflow-hidden">
+        <div className="absolute inset-0 bg-grid-black/5 bg-[size:40px_40px]" />
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center space-y-8 mb-20">
+              <h2 className="text-4xl md:text-6xl font-bold font-playfair">
+                The 
+                <GradientText 
+                  text="Tech Blueprint Audit" 
+                  className=""
+                  gradient="linear-gradient(90deg, #6366f1 0%, #8b5cf6 100%)"
+                />
+              </h2>
+              <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto font-poppins leading-relaxed">
+                Our foundational service for businesses unsure of their next steps. We dive deep to understand your challenges and create a strategic roadmap.
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {/* Discovery */}
+              <Card className="group relative p-8 bg-gradient-to-br from-white to-indigo-50/50 border-indigo-200/50 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/5 to-indigo-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="relative z-10">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="p-3 bg-gradient-to-r from-indigo-500 to-indigo-600 rounded-xl group-hover:scale-110 transition-transform duration-300">
+                      <Map className="h-8 w-8 text-white" />
+                    </div>
+                    <h3 className="text-2xl font-bold text-indigo-800 font-playfair">Deep Dive Discovery</h3>
+                  </div>
+                  <p className="text-gray-600 leading-relaxed font-poppins">
+                    We conduct in-depth interviews to understand your business model, revenue streams, operational workflows, and long-term goals.
+                  </p>
+                </div>
+              </Card>
+
+              {/* Analysis */}
+              <Card className="group relative p-8 bg-gradient-to-br from-white to-purple-50/50 border-purple-200/50 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-br from-purple-500/5 to-purple-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="relative z-10">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="p-3 bg-gradient-to-r from-purple-500 to-purple-600 rounded-xl group-hover:scale-110 transition-transform duration-300">
+                      <Wrench className="h-8 w-8 text-white" />
+                    </div>
+                    <h3 className="text-2xl font-bold text-purple-800 font-playfair">Systems & Process Analysis</h3>
+                  </div>
+                  <p className="text-gray-600 leading-relaxed font-poppins">
+                    We map out your current processes, identifying bottlenecks, manual tasks, and disconnected software systems.
+                  </p>
+                </div>
+              </Card>
+
+              {/* Opportunity */}
+              <Card className="group relative p-8 bg-gradient-to-br from-white to-green-50/50 border-green-200/50 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-br from-green-500/5 to-green-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="relative z-10">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="p-3 bg-gradient-to-r from-green-500 to-green-600 rounded-xl group-hover:scale-110 transition-transform duration-300">
+                      <Target className="h-8 w-8 text-white" />
+                    </div>
+                    <h3 className="text-2xl font-bold text-green-800 font-playfair">Opportunity Identification</h3>
+                  </div>
+                  <p className="text-gray-600 leading-relaxed font-poppins">
+                    We pinpoint specific areas where technology can drive the most impact—cost savings, revenue growth, or customer experience enhancement.
+                  </p>
+                </div>
+              </Card>
+            </div>
+            
+            <div className="mt-16 text-center">
+              <Card className="group relative p-8 bg-gradient-to-br from-white to-blue-50/50 border-blue-200/50 hover:shadow-2xl transition-all duration-500 overflow-hidden max-w-4xl mx-auto">
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-blue-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="relative z-10">
+                  <h3 className="text-2xl font-bold text-blue-800 font-playfair mb-4">The Deliverable</h3>
+                  <p className="text-gray-600 leading-relaxed font-poppins mb-6">
+                    A comprehensive <strong>"Tech Blueprint"</strong> document that outlines your current business phase from a technological perspective, a prioritized list of technology initiatives, a clear roadmap with recommended solutions, and estimated timelines and budget considerations.
+                  </p>
+                  <Button 
+                    asChild
+                    className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-poppins shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                  >
+                    <a 
+                      href="https://calendly.com/ajay_k_gupta/30min" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
+                      Schedule Your Tech Blueprint Audit
+                    </a>
+                  </Button>
                 </div>
               </Card>
             </div>
@@ -144,12 +260,12 @@ export default function Home() {
           <div className="max-w-6xl mx-auto">
             <div className="text-center space-y-8 mb-20">
               <h2 className="text-4xl md:text-6xl font-bold font-playfair">
-                Expertise Tailored for 
+                Industry Expertise with 
                 <GradientText 
-                  text="Your Industry" 
+                  text="Hub & Spoke" 
                   className=""
                   gradient="linear-gradient(90deg, #10b981 0%, #059669 100%)"
-                />
+                /> Architecture
               </h2>
               <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto font-poppins leading-relaxed">
                 While our core principles apply to any complex operation, we've developed specialized solutions for industries with unique challenges.
@@ -174,7 +290,7 @@ export default function Home() {
                   </div>
                   
                   <p className="text-gray-600 leading-relaxed font-poppins">
-                    A purpose-built platform to solve publishing-specific challenges like book set management, batch tracking, and sales forecasting. Stop drowning in spreadsheets and start selling more books.
+                    A purpose-built platform to solve publishing-specific challenges like book set management, batch tracking, and sales forecasting.
                   </p>
                   
                   <div className="pt-4">
@@ -206,7 +322,7 @@ export default function Home() {
                   </div>
                   
                   <p className="text-gray-600 leading-relaxed font-poppins">
-                    Don't see your industry? Our team of solutions architects can work with you to analyze your specific workflows and build a tailored solution from the ground up.
+                    Don't see your industry? Our team of solutions architects can work with you to analyze your specific workflows and build a tailored solution.
                   </p>
                   
                   <div className="pt-4">
@@ -309,7 +425,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why Cimulink Section */}
+      {/* Why Tech Copilot Section */}
       <section className="relative py-20 bg-gradient-to-br from-blue-50/30 via-background to-purple-50/30 overflow-hidden">
         <div className="absolute inset-0 bg-grid-black/5 bg-[size:50px_50px]" />
         <div className="container mx-auto px-4 relative z-10">
@@ -324,7 +440,7 @@ export default function Home() {
                 />.
               </h2>
               <p className="text-xl text-gray-600 max-w-4xl mx-auto font-poppins leading-relaxed">
-                Choose Cimulink for expertise that goes beyond code. We deliver solutions that understand your business.
+                Choose Tech Copilot for expertise that goes beyond code. We deliver solutions that understand your business.
               </p>
             </div>
             
@@ -335,12 +451,12 @@ export default function Home() {
                 <div className="relative z-10 space-y-4">
                   <div className="flex items-center gap-4">
                     <div className="p-3 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl group-hover:scale-110 transition-transform duration-300">
-                      <Users className="h-8 w-8 text-white" />
+                      <Brain className="h-8 w-8 text-white" />
                     </div>
                     <h3 className="text-2xl font-bold text-blue-800 font-playfair">Deep Domain Expertise</h3>
                   </div>
                   <p className="text-gray-600 leading-relaxed font-poppins">
-                    We understand the nuances of inventory, finance, and logistics operations—not just the code. Our team has real-world experience with complex business workflows.
+                    We understand the nuances of business operations—not just the code. Our team has real-world experience with complex business workflows.
                   </p>
                 </div>
               </Card>
@@ -367,7 +483,7 @@ export default function Home() {
                 <div className="relative z-10 space-y-4">
                   <div className="flex items-center gap-4">
                     <div className="p-3 bg-gradient-to-r from-purple-500 to-purple-600 rounded-xl group-hover:scale-110 transition-transform duration-300">
-                      <Settings className="h-8 w-8 text-white" />
+                      <Users className="h-8 w-8 text-white" />
                     </div>
                     <h3 className="text-2xl font-bold text-purple-800 font-playfair">Solutions Architect-Led</h3>
                   </div>
@@ -383,7 +499,7 @@ export default function Home() {
                 <div className="relative z-10 space-y-4">
                   <div className="flex items-center gap-4">
                     <div className="p-3 bg-gradient-to-r from-orange-500 to-orange-600 rounded-xl group-hover:scale-110 transition-transform duration-300">
-                      <Database className="h-8 w-8 text-white" />
+                      <Settings className="h-8 w-8 text-white" />
                     </div>
                     <h3 className="text-2xl font-bold text-orange-800 font-playfair">API-First Architecture</h3>
                   </div>

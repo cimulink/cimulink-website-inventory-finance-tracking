@@ -3,12 +3,14 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { CheckCircle, BookOpen, DollarSign, Package, Users, Zap, Shield, TrendingUp, AlertTriangle, Clock, FileText, BarChart3, Settings, Database, ShoppingCart } from "lucide-react";
+import { CheckCircle, BookOpen, DollarSign, Package, Users, Zap, Shield, TrendingUp, AlertTriangle, Clock, FileText, BarChart3, Settings, Database, ShoppingCart, Rocket, Wrench, Target } from "lucide-react";
 import Image from "next/image";
 import { GradientText } from "@/components/ui/enhanced/gradient-text";
 import { RetroGrid } from "@/components/ui/enhanced/retro-grid";
 import { Meteors } from "@/components/ui/enhanced/meteors";
 import { ContactSection } from "@/components/ui/enhanced/contact-section";
+import Link from "next/link";
+import { BrandedText } from "@/components/ui/enhanced/branded-text";
 
 export default function BookLinkPage() {
   return (
@@ -41,7 +43,7 @@ export default function BookLinkPage() {
                 <Button 
                   asChild
                   size="lg" 
-                  className="text-lg px-8 py-4 bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 transition-all duration-300 hover:scale-105 hover:shadow-xl font-poppins"
+                  className="text-lg px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 transition-all duration-300 hover:scale-105 hover:shadow-xl font-poppins"
                 >
                   <a 
                     href="https://calendly.com/ajay_k_gupta/30min" 
@@ -50,6 +52,16 @@ export default function BookLinkPage() {
                   >
                     Book a Demo
                   </a>
+                </Button>
+                <Button 
+                  asChild
+                  variant="outline"
+                  size="lg" 
+                  className="text-lg px-8 py-4 font-poppins border-2 hover:bg-accent transition-all duration-300 hover:scale-105"
+                >
+                  <Link href="/">
+                    ← Back to <BrandedText brand="tech-copilot" size="sm" />
+                  </Link>
                 </Button>
               </div>
             </div>
@@ -704,7 +716,7 @@ export default function BookLinkPage() {
                 <AccordionItem value="item-4" className="bg-white/70 backdrop-blur-sm rounded-lg px-6 border hover:shadow-md transition-all">
                   <AccordionTrigger className="text-left hover:text-primary transition-colors">What if we need functionality that isn't in BookLink?</AccordionTrigger>
                   <AccordionContent className="text-gray-600">
-                    That's the benefit of working with Cimulink. For unique requirements, we offer custom development services to build features or integrations tailored to your specific workflow.
+                    That's the benefit of working with Tech Copilot. For unique requirements, we offer custom development services to build features or integrations tailored to your specific workflow.
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-5" className="bg-white/70 backdrop-blur-sm rounded-lg px-6 border hover:shadow-md transition-all">
