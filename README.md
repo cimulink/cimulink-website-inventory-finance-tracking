@@ -1,6 +1,6 @@
-# Tech Copilot - Strategic Software Development & Automation Solutions
+# Cimulink - Strategic Software Development & Automation Solutions
 
-Tech Copilot is your dedicated technology partner. We audit your operations, define a strategic tech roadmap, and execute with precision to help you scale, optimize, and innovate. We translate your business goals into technical reality.
+Cimulink is your dedicated technology partner. We audit your operations, define a strategic tech roadmap, and execute with precision to help you scale, optimize, and innovate. We translate your business goals into technical reality.
 
 ## Services
 

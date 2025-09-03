@@ -425,7 +425,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why Tech Copilot Section */}
+      {/* Why Cimulink Section */}
       <section className="relative py-20 bg-gradient-to-br from-blue-50/30 via-background to-purple-50/30 overflow-hidden">
         <div className="absolute inset-0 bg-grid-black/5 bg-[size:50px_50px]" />
         <div className="container mx-auto px-4 relative z-10">
@@ -440,7 +440,7 @@ export default function Home() {
                 />.
               </h2>
               <p className="text-xl text-gray-600 max-w-4xl mx-auto font-poppins leading-relaxed">
-                Choose Tech Copilot for expertise that goes beyond code. We deliver solutions that understand your business.
+                Choose Cimulink for expertise that goes beyond code. We deliver solutions that understand your business.
               </p>
             </div>
             

@@ -60,7 +60,7 @@ export default function BookLinkPage() {
                   className="text-lg px-8 py-4 font-poppins border-2 hover:bg-accent transition-all duration-300 hover:scale-105"
                 >
                   <Link href="/">
-                    ← Back to <BrandedText brand="tech-copilot" size="sm" />
+                    ← Back to <BrandedText brand="cimulink" size="sm" />
                   </Link>
                 </Button>
               </div>
@@ -716,7 +716,7 @@ export default function BookLinkPage() {
                 <AccordionItem value="item-4" className="bg-white/70 backdrop-blur-sm rounded-lg px-6 border hover:shadow-md transition-all">
                   <AccordionTrigger className="text-left hover:text-primary transition-colors">What if we need functionality that isn't in BookLink?</AccordionTrigger>
                   <AccordionContent className="text-gray-600">
-                    That's the benefit of working with Tech Copilot. For unique requirements, we offer custom development services to build features or integrations tailored to your specific workflow.
+                    That's the benefit of working with Cimulink. For unique requirements, we offer custom development services to build features or integrations tailored to your specific workflow.
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-5" className="bg-white/70 backdrop-blur-sm rounded-lg px-6 border hover:shadow-md transition-all">
