@@ -12,12 +12,34 @@ const nextConfig = {
         source: '/blog',
         destination: 'https://cimulink-blog.vercel.app/',
       },
+      // Quartz root assets (Handles relative path requests when /blog has no trailing slash)
+      {
+        source: '/index.css',
+        destination: 'https://cimulink-blog.vercel.app/index.css',
+      },
+      {
+        source: '/prescript.js',
+        destination: 'https://cimulink-blog.vercel.app/prescript.js',
+      },
+      {
+        source: '/postscript.js',
+        destination: 'https://cimulink-blog.vercel.app/postscript.js',
+      },
+      {
+        source: '/spa.js',
+        destination: 'https://cimulink-blog.vercel.app/spa.js',
+      },
+      // Root static folder fallback for Quartz icons, fonts, etc.
+      {
+        source: '/static/:path*',
+        destination: 'https://cimulink-blog.vercel.app/static/:path*',
+      },
       // Blog content paths (articles, folders)
       {
         source: '/blog/:path((?!static|assets).*)',
         destination: 'https://cimulink-blog.vercel.app/:path*',
       },
-      // Static assets
+      // Static assets under /blog/
       {
         source: '/blog/static/:path*',
         destination: 'https://cimulink-blog.vercel.app/static/:path*',
