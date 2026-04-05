@@ -69,6 +69,7 @@ const cimulinksNavigationLinks = [
   { href: '#core-competencies', label: 'Expertise' },
   { href: '#solutions', label: 'Solutions' },
   { href: '#process', label: 'Process' },
+  { href: '/blog', label: 'Blog', isExternal: true },
   { href: '#contact', label: 'Contact' },
 ];
 
@@ -78,6 +79,7 @@ const bookLinkNavigationLinks = [
   { href: '#pain-points', label: 'Challenges' },
   { href: '#why-choose-us', label: 'Solutions' },
   { href: '#features', label: 'Features' },
+  { href: '/blog', label: 'Blog', isExternal: true },
   { href: '#contact', label: 'Contact' },
 ];
 
@@ -196,18 +198,32 @@ export function EnhancedNavigation({ className }: NavigationProps) {
             <NavigationMenuList className="gap-1">
               {navigationLinks.map((link) => (
                 <NavigationMenuItem key={link.href}>
-                  <NavigationMenuLink
-                    className={cn(
-                      navigationMenuTriggerStyle(),
-                      "cursor-pointer font-poppins transition-all duration-200",
-                      activeSection === link.href.substring(1)
-                        ? "bg-primary/10 text-primary"
-                        : "hover:bg-accent hover:text-accent-foreground"
-                    )}
-                    onClick={() => scrollToSection(link.href)}
-                  >
-                    {link.label}
-                  </NavigationMenuLink>
+                  {link.isExternal ? (
+                    <NavigationMenuLink
+                      asChild
+                      className={cn(
+                        navigationMenuTriggerStyle(),
+                        "cursor-pointer font-poppins transition-all duration-200 hover:bg-accent hover:text-accent-foreground"
+                      )}
+                    >
+                      <Link href={link.href}>
+                        {link.label}
+                      </Link>
+                    </NavigationMenuLink>
+                  ) : (
+                    <NavigationMenuLink
+                      className={cn(
+                        navigationMenuTriggerStyle(),
+                        "cursor-pointer font-poppins transition-all duration-200",
+                        activeSection === link.href.substring(1)
+                          ? "bg-primary/10 text-primary"
+                          : "hover:bg-accent hover:text-accent-foreground"
+                      )}
+                      onClick={() => scrollToSection(link.href)}
+                    >
+                      {link.label}
+                    </NavigationMenuLink>
+                  )}
                 </NavigationMenuItem>
               ))}
             </NavigationMenuList>
@@ -234,17 +250,27 @@ export function EnhancedNavigation({ className }: NavigationProps) {
                   <NavigationMenuList className="flex-col items-start gap-1">
                     {navigationLinks.map((link) => (
                       <NavigationMenuItem key={link.href} className="w-full">
-                        <button
-                          onClick={() => scrollToSection(link.href)}
-                          className={cn(
-                            "flex w-full items-center rounded-md px-3 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground font-poppins text-left cursor-pointer",
-                            activeSection === link.href.substring(1)
-                              ? "bg-primary/10 text-primary"
-                              : "text-foreground/80"
-                          )}
-                        >
-                          {link.label}
-                        </button>
+                        {link.isExternal ? (
+                          <Link
+                            href={link.href}
+                            onClick={() => setIsOpen(false)}
+                            className="flex w-full items-center rounded-md px-3 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground font-poppins text-left cursor-pointer text-foreground/80"
+                          >
+                            {link.label}
+                          </Link>
+                        ) : (
+                          <button
+                            onClick={() => scrollToSection(link.href)}
+                            className={cn(
+                              "flex w-full items-center rounded-md px-3 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground font-poppins text-left cursor-pointer",
+                              activeSection === link.href.substring(1)
+                                ? "bg-primary/10 text-primary"
+                                : "text-foreground/80"
+                            )}
+                          >
+                            {link.label}
+                          </button>
+                        )}
                       </NavigationMenuItem>
                     ))}
                   </NavigationMenuList>

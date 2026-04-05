@@ -6,35 +6,17 @@ const nextConfig = {
     deviceSizes: [640, 750, 828, 1080, 1200, 1400, 1920, 2048],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384, 512, 640, 750, 828, 1080, 1200, 1400],
   },
-  async rewrites() {
+  async redirects() {
     return [
-      // 1. Blog root without trailing slash
       {
         source: '/blog',
-        destination: 'https://cimulink-blog.vercel.app/',
+        destination: 'https://blog.cimulink.com/',
+        permanent: true, // 308 permanent redirect
       },
-      // 2. Blog root with trailing slash
       {
         source: '/blog/',
-        destination: 'https://cimulink-blog.vercel.app/',
-      },
-      // 3. All deep-linked blog paths and assets (CSS, JS, images, etc.)
-      {
-        source: '/blog/:path*',
-        destination: 'https://cimulink-blog.vercel.app/:path*',
-      },
-      // 4. Catch-all for absolute path assets when navigating directly to blog posts
-      // This handles cases where Quartz loads assets with absolute paths like /styles.css
-      {
-        source: '/:path*',
-        has: [
-          {
-            type: 'header',
-            key: 'referer',
-            value: '.*\\/blog.*',
-          },
-        ],
-        destination: 'https://cimulink-blog.vercel.app/:path*',
+        destination: 'https://blog.cimulink.com/',
+        permanent: true,
       },
     ]
   },
