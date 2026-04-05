@@ -23,6 +23,19 @@ const nextConfig = {
         source: '/blog/:path*',
         destination: 'https://cimulink-blog.vercel.app/:path*',
       },
+      // 4. Catch-all for absolute path assets when navigating directly to blog posts
+      // This handles cases where Quartz loads assets with absolute paths like /styles.css
+      {
+        source: '/:path*',
+        has: [
+          {
+            type: 'header',
+            key: 'referer',
+            value: '.*\\/blog.*',
+          },
+        ],
+        destination: 'https://cimulink-blog.vercel.app/:path*',
+      },
     ]
   },
 }
